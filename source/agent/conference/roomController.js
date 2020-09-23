@@ -571,6 +571,7 @@ module.exports.create = function (spec, on_init_ok, on_init_failed) {
         });
     };
 
+    
     var shrinkStream = function (stream_id, target_node) {
         log.debug('shrinkStream, stream_id:', stream_id, 'target_node:', target_node);
         if (streams[stream_id] && terminals[streams[stream_id].owner]) {
